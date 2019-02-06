@@ -1,17 +1,14 @@
 {
-  "extends": [
-    "tslint-eslint-rules",
-    "tslint-config-airbnb",
-    "tslint-config-prettier"
-  ],
+  "defaultSeverity": "error",
+//  "extends": ["tslint:latest", "tslint-config-prettier"],
+  "jsRules": {},
   "rules": {
-    "object-literal-sort-keys": false,
-    "interface-over-type-literal": false,
-    "interface-name": false,
-    "no-implicit-dependencies": [true, "dev"],
-    "quotemark": [true, "single", "jsx-double"],
-    "variable-name": [true, "check-format", "allow-pascal-case"],
     "no-console": false,
-    "forin": false
-  }
+    "member-access": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "interface-name": false,
+    "no-submodule-imports": false
+  },
+  "rulesDirectory": []
 }
