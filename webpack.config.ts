@@ -2,7 +2,7 @@ import { default as HtmlWebpackPlugin } from 'html-webpack-plugin'
 import { Configuration } from 'webpack'
 
 const config: Configuration = {
-  entry: './src/entry/index.tsx',
+  entry: './src/index.tsx',
   output: {
     filename: 'dist/bundle.js'
   },
@@ -19,7 +19,7 @@ const config: Configuration = {
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin({ template: './src/entry/index.html' })]
+  plugins: [new HtmlWebpackPlugin({ template: './src/index.html' })]
 }
 
 export default config
